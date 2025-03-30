@@ -6,6 +6,7 @@ import { ScheduleCard } from '@/components/ScheduleCard';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { PowerIcon } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Home() {
   const [selectedNeighborhood, setSelectedNeighborhood] = useState<string>('');
@@ -39,9 +40,10 @@ export default function Home() {
       <div className="container mx-auto px-4 py-8">
         <div className="flex items-center justify-center mb-8 text-primary">
           <PowerIcon className="h-8 w-8 mr-2" />
-          <h1 className="text-3xl font-bold">Power Outage Schedule</h1>
+          <h1 className="text-3xl font-bold">မီးအချိန်ဇယား(ကျိုင်းတုံမြို့)</h1>
         </div>
-
+        <span><Link className='text-blue-400' href={`https://www.facebook.com/profile.php?id=61570259326186`}> Coddify</Link> admin Shiro မှအခမဲ့ပြုလုပ်ပေးပါသည်</span>
+        
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-8">
           <div className="space-y-2">
             <label className="text-sm font-medium">Search Neighborhood</label>
